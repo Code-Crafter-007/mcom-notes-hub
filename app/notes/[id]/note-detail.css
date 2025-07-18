@@ -1,0 +1,276 @@
+.note-detail-page {
+  padding: 2rem 0;
+  min-height: 80vh;
+}
+
+.note-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.note-preview {
+  position: sticky;
+  top: 2rem;
+}
+
+.preview-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.preview-thumbnail {
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-navy), var(--primary-maroon));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.price-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-maroon);
+  margin-right: 1rem;
+}
+
+.original-price {
+  font-size: 1.25rem;
+  color: var(--dark-gray);
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+
+.discount {
+  background: var(--primary-maroon);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.buy-btn,
+.preview-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--primary-navy);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover,
+.preview-btn:hover {
+  background: var(--primary-maroon);
+}
+
+.note-stats {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.note-stats h4 {
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  color: var(--dark-gray);
+}
+
+.stat-value {
+  font-weight: 600;
+  color: var(--primary-navy);
+}
+
+.breadcrumb {
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: var(--primary-navy);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.note-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.note-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.semester-badge {
+  background: var(--primary-navy);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: var(--primary-maroon);
+}
+
+.reviews {
+  color: var(--dark-gray);
+  font-weight: normal;
+}
+
+.students {
+  color: var(--dark-gray);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 1rem 2rem;
+  border: none;
+  background: none;
+  color: var(--dark-gray);
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  color: var(--primary-navy);
+  border-bottom-color: var(--primary-navy);
+}
+
+.tab-content {
+  min-height: 300px;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.feature-list,
+.topics-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li,
+.topics-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.feature-list li::before,
+.topics-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-maroon);
+  font-weight: bold;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 0.5rem;
+}
+
+.feature-icon {
+  color: var(--primary-maroon);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .note-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .note-preview {
+    position: static;
+    order: 2;
+  }
+
+  .note-title {
+    font-size: 2rem;
+  }
+
+  .tabs {
+    overflow-x: auto;
+  }
+
+  .tab-btn {
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+  }
+}
