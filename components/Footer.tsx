@@ -76,7 +76,8 @@ export default function Footer() {
             <h4 className="footer-heading">Contact</h4>
             <div className="contact-info">
               <p>📧 codecrafted011@gmail.com</p>
-              <p>📱 +91 9876543210</p>
+              <p>📱 +91 7879586484</p>
+              <p>📱 +91 8696705377</p>
               <p>💬 WhatsApp Support</p>
             </div>
           </div>
