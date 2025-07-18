@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { User } from '@supabase/supabase-js'; // ✅ Make sure this is imported
+
 import { supabase } from "@/lib/supabaseClient";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [user, setUser] = useState(null);
+const [user, setUser] = useState<User | null>(null); // ✅ correct
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
 
