@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
-import Spinner from "@/components/Spinner"; // 🌀 Loading spinner
+// import Spinner from "@/components/Spinner"; // 🌀 Loading spinner
 import "./dashboard.css";
 
 export default function ProfilePage() {
@@ -77,7 +77,7 @@ export default function ProfilePage() {
   };
 
   // 🌀 Spinner while loading
-  if (loading) return <Spinner />;
+  // if (loading) return <Spinner />;
 
   return (
     <div className="profile-container">

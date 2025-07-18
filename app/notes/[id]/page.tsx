@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { supabase } from "@/lib/supabaseClient";
-import Spinner from "@/components/Spinner";
+// import Spinner from "@/components/Spinner";
 import "./note-detail.css";
 
 export default function NoteDetailPage() {
@@ -55,7 +55,9 @@ const handleViewPDF = () => {
 };
 
 
-  if (loading || !note || !details) return <Spinner />;
+  // if (loading || !note || !details) return <Spinner />;
+  if (loading || !note || !details) return <p>Loading note...</p>;
+
 
   return (
     <div className="note-detail-page fade-in">
